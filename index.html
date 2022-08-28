@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <section>
+        <h2>Contato</h2>
+        <form id="form" action="https://api.staticforms.xyz/submit" method="post">
+            <!-- Nome -->
+            <label for="Nome">Nome</label>
+            <input type="text" name="name" id="name" required maxlength="45" placeholder="Digite seu nome" autocomplete="off">
+            <!-- Email -->
+            <label for="Email" >Email</label>
+            <input type="email" name="email" id="email" required maxlength="45" placeholder="Digite seu email" autocomplete="off">
+            <!-- Mensagem -->
+            <label for="Mensagem">Mensagem</label>
+            <textarea name="message" id="name" required maxlength="45" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+            <!-- Enviar -->
+            <button type="submit">Enviar</button>
+            <input type="hidden" name="accessKey" value="b1a22ee9-aa95-4995-b058-02fac4ab5eb0">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/imagidesigner.html">
+            <span role="alert" id="nameError" aria-hidden="true">
+                Please enter First Name
+              </span>
+        </form>
+    </section>
+    <div>
+        <img src="" alt="">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
